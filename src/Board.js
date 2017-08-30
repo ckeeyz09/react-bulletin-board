@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import Note from './Note'
 
+
+
 var Board = React.createClass({
       propTypes: {
         count: function(props, propName) {
@@ -75,7 +77,7 @@ var Board = React.createClass({
                 id={note.id} 
                 onChange={this.update} 
                 onRemove={this.remove}>
-              {note.note}
+                {note.note}
             </Note>)
       },
 
